@@ -1,0 +1,127 @@
+/* Default */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Inconsolata', monospace;
+}
+
+/* Var */
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --gray: #e5e5e5;
+    --pink: #f20089;
+
+    --delgado: 200;
+    --medio: 400;
+    --grueso: 600;
+
+    --sm: 1rem;
+    --md: 1.5rem;
+    --lg: 2.5rem;
+}
+
+/* Page */
+
+
+.main {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__div {
+    width: 30rem;
+    height: 20rem;
+    
+    border-radius: 1rem;
+    background-color: var(--black);
+
+    position: absolute;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.div__img--container {
+    width: 14rem;
+    height: auto;
+}
+
+.div__img {
+    width: 10rem;
+    left: 1rem;
+    position: relative;
+}
+
+
+
+.div__numbers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    width: 15rem;
+    height: inherit;
+}
+
+.div__one {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.one__span{
+    color: var(--white);
+    font-weight: var(--grueso);
+    font-size: var(--md);
+}
+
+.one__span--pink {
+    color: var(--pink);
+    font-weight: var(--grueso);
+    font-size: var(--sm);
+}
+
+
+
+.div__two {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+}
+
+.one {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2.5rem;
+}
+
+.two {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.div__three {
+    display: flex;
+    flex-direction: column  ;
+}
+
+.three__span--text {
+    color: var(--gray);
+    font-weight: var(--medio);
+    font-size: var(--sm);
+}
